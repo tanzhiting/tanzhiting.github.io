@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-image: url("images/sky.jpg");
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+img {
+    padding: 5px;
+}
+
+.nav1 {
+    display: flex;
+    margin: 5px;
+    gap: 20px;
+}
+
+.nav1a {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+}
