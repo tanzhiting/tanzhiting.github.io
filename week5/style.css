@@ -5,7 +5,7 @@ body {
 /*menu bar*/
 
 header {
-    padding: 5px;
+    padding: 15px;
     padding-left: 10px;
     background-color: rgba(44, 142, 236, 255);
     display: flex;
@@ -38,40 +38,58 @@ section {
     display: flex;
 }
 
-/*container*/
-
-.container {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-}
-
-.column {
-    flex: 1;
-    padding: 10px;
-}
-
-.column1 {
-    background-color: lightblue;
-}
-
-.column2 {
-    background-color: lightgreen;
-    flex: 2;
-}
-
 /*content*/
 
 .content {
     display: flex;
     gap: 10px;
     padding: 10px;
+}
+
+.side-bar {
+    padding: 10px;
+    background-color: antiquewhite;
     flex: 1;
 }
 
-.concolumn {
+.main-content {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+.column1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.column2 {
+    display: flex;
+    gap: 10px;
+}
+
+.column1a {
     background-color: lightblue;
-    flex: 1;
+    flex: 3;
+    padding: 10px;
+}
+
+.column1b {
+    background-color: lightgreen;
+    flex: 5;
+    padding: 10px;
+}
+
+.column2a {
+    background-color: lightgreen;
+    flex: 5;
+    padding: 10px;
+}
+
+.column2b {
+    background-color: lightblue;
+    flex: 3;
     padding: 10px;
 }
 
