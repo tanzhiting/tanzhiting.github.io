@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
         .container {
             display: flex;
             gap: 10px;
+            padding: 10px;
         }
 
         .column {
@@ -24,10 +36,34 @@
             background-color: lightgreen;
             flex: 2;
         }
+
+        .content {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            flex: 1;
+        }
+
+        .concolumn {
+            background-color: lightblue;
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
     <div class="container">
         <div class="column column1">
             <h2>Column 1</h2>
@@ -37,6 +73,25 @@
             <h2>Column 2</h2>
             <p>This is the second column.</p>
         </div>
+    </div>
+
+    <div class="content">
+        <div class="concolumn">
+            <h2>Column 1</h2>
+            <p>This is the first column.</p>
+        </div>
+        <div class="concolumn">
+            <h2>Column 2</h2>
+            <p>This is the second column.</p>
+        </div>
+        <div class="concolumn">
+            <h2>Column 3</h2>
+            <p>This is the third column.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
     </div>
 </body>
 
