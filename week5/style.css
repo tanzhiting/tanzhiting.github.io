@@ -2,6 +2,8 @@ body {
     margin: 0px;
 }
 
+/*menu bar*/
+
 header {
     padding: 5px;
     padding-left: 10px;
@@ -32,6 +34,12 @@ div.navdiv {
     text-decoration: underline;
 }
 
+section {
+    display: flex;
+}
+
+/*container*/
+
 .container {
     display: flex;
     gap: 10px;
@@ -52,6 +60,8 @@ div.navdiv {
     flex: 2;
 }
 
+/*content*/
+
 .content {
     display: flex;
     gap: 10px;
@@ -64,6 +74,8 @@ div.navdiv {
     flex: 1;
     padding: 10px;
 }
+
+/*footer*/
 
 .footer {
     background-color: #4CAF50;
