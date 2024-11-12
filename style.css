@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+    font-family: "Doto", sans-serif;
+    font-weight: 500;
+}
+
+/*header*/
+header {
+    background-color: #FAB12F;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 23px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+#logo {
+    filter: brightness(0) invert(1);
+}
+
+.get-in-touch {
+    display: flex;
+    gap: 10px;
+}
+
+/*content*/
+.content {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+}
+
+/*intro*/
+.intro {
+    padding: 10px;
+}
+
+#profile {
+    border-radius: 50%;
+}
+
+#name {
+    font-weight: 900;
+}
+
+#Bio {
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/*Exercise list*/
+.cloumn1 {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.cloumn2 {
+    gap: 10px;
+}
+
+.list {
+    padding: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 1px;
+    background-color: rgba(254, 243, 226, 0.904);
+    border-radius: 10px;
+    font-size: medium;
+}
+
+
+.week {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
+
+hr {
+    border: 1px solid;
+}
+
+.exe {
+    padding-top: 10px;
+    color: #FA812F;
+}
+
+/*footer*/
+footer {
+    background-color: #FAB12F;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#rights {
+    color: white;
+    font-size: x-small;
+}
