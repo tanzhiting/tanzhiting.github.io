@@ -9,6 +9,8 @@ body {
     background-color: #383434;
     padding: 15px 20px 15px 20px;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 a {
@@ -24,6 +26,27 @@ img.icon {
     display: flex;
     gap: 25px;
     padding-right: 5px;
+}
+
+.home {
+    display: flex;
+    gap: 3px;
+}
+
+#about {
+    display: flex;
+}
+
+#about img {
+    padding: 5px 0px 0px 3px;
+}
+
+#services {
+    display: flex;
+}
+
+#services img {
+    padding: 5px 0px 0px 3px;
 }
 
 .submenu1 {
@@ -68,4 +91,19 @@ img.icon {
 
 .submenu2 a:hover {
     background-color: #5b5656;
+}
+
+@media screen and (max-width:600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    #homeicon {
+        display: none;
+    }
 }
