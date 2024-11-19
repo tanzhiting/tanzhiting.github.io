@@ -1,0 +1,45 @@
+.card {
+    background-color: #fffefc;
+    display: flex;
+}
+
+.Description {
+    flex: 1;
+    align-content: center;
+    padding: 30px 30px 30px 30px;
+}
+
+h2 {
+    font-weight: lighter;
+}
+
+p {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60%;
+    margin-top: -10px;
+}
+
+
+button {
+    background-color: #c8bcb4;
+    border: 1px solid #c8bcb4;
+    color: #fffefc;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.images {
+    flex: 1;
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        flex-direction: column-reverse;
+    }
+}
