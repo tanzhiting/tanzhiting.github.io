@@ -59,7 +59,8 @@ header {
 }
 
 .cloumn2 {
-    gap: 10px;
+    gap: 15px;
+    display: flex;
 }
 
 .list {
@@ -81,13 +82,22 @@ header {
     font-weight: 900;
 }
 
+
 hr {
     border: 1px solid;
 }
 
 .exe {
     padding-top: 10px;
+}
+
+.exe a {
+    text-decoration: none;
     color: #FA812F;
+}
+
+.exe a:hover {
+    color: #4f6d08;
 }
 
 /*footer*/
@@ -104,4 +114,24 @@ footer {
 #rights {
     color: white;
     font-size: x-small;
+}
+
+@media screen and (max-width:600px) {
+    .cloumn1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cloumn2 {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        background-size: cover;
+        background-position: center;
+    }
 }
