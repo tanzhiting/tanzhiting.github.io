@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Oxygen", sans-serif;
+        background-color: #f6f5ef;
+        /* margin: 0 calc(10% + 2vw); */
+    }
+
+    .content {
+        margin: auto;
+        max-width: 87vw;
+        background-color: aqua;
+    }
+
+    .title_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 0;
+        text-align: center;
+    }
+
+    .flex-containe {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .containe_box {
+        background-color: white;
+        border-radius: 20px;
+        width: calc(100% / 3);
+        padding: 1.5%;
+    }
+
+    #pic1,
+    #pic2,
+    #pic3 {
+        height: 43vh;
+        width: auto;
+        border-radius: 10px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 5vh;
+    }
+
+    #pic1 {
+        background-image: url("week1_img/custom-img-017-copyright.jpg");
+    }
+
+    #pic2 {
+        background-image: url("week1_img/custom-img-018-copyright.jpg");
+    }
+
+    #pic3 {
+        background-image: url("week1_img/custom-img-019-copyright.jpg");
+    }
+
+    .pic_textbox {
+        margin: 3vh 1.5vw;
+    }
+
+    h1,
+    h2,
+    h6 {
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 55px;
+        margin: 1% 0;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h6 {
+        font-size: 14px;
+        margin: 3% 0;
+        letter-spacing: 1px;
+        line-height: 14px;
+    }
+
+    p,
+    .explanation {
+        color: #646463;
+    }
+
+
+    @media (min-width: 768px) and (max-width: 1276px) {
+        .content {
+            margin: auto;
+            max-width: 95vw;
+        }
+
+        .title_box {
+            padding: 3vh 0;
+        }
+
+        .pic_textbox {
+            margin: 0 1vw;
+        }
+
+        #pic1,
+        #pic2,
+        #pic3 {
+            height: 25vh;
+            margin-bottom: 3vh;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 23px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .content {
+            margin: auto;
+            max-width: 95vw;
+        }
+
+        .title_box {
+            padding: 2vh 0;
+        }
+
+        .flex-containe {
+            flex-direction: column;
+        }
+
+        .containe_box {
+            width: 100%;
+            padding: 3%;
+        }
+
+        #pic1,
+        #pic2,
+        #pic3 {
+            height: 60vh;
+            margin-bottom: 0vh;
+        }
+
+        .pic_textbox {
+            margin: 1vh 2vw;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 23px;
+        }
+    }
+</style>
+
+
+<body>
+    <div class="content">
+        <div class="title_box">
+            <div>
+                <h6 style="text-transform:uppercase">Building a better future</h6>
+            </div>
+            <div>
+                <h1>We construct & deliver quality projects</h1>
+            </div>
+            <div>
+                <p>Meet our customers and explore their success stories with us</p>
+            </div>
+        </div>
+
+        <div class="flex-containe">
+            <div class="containe_box">
+                <div id="pic1"></div>
+                <div class="pic_textbox">
+                    <div>
+                        <h2>Residential projects</h2>
+                    </div>
+                    <div class="explanation">We build sustainable and modern homes for comfortable living.</div>
+                </div>
+            </div>
+
+            <div class="containe_box">
+                <div id="pic2"></div>
+                <div class="pic_textbox">
+                    <div>
+                        <h2>Commercial spaces</h2>
+                    </div>
+                    <div class="explanation">We create efficient, inspiring workspaces for businesses of all sizes.
+                    </div>
+                </div>
+            </div>
+
+            <div class="containe_box">
+                <div id="pic3"></div>
+                <div class="pic_textbox">
+                    <div>
+                        <h2>Infrastructure works</h2>
+                    </div>
+                    <div class="explanation">We develop strong, reliable infrastructure for growing communities.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
