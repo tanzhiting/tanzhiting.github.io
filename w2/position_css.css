@@ -1,0 +1,70 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --text_color: rgb(33, 32, 30);
+}
+
+body {
+    background-color: var(--white);
+}
+
+#outside_box {
+    padding: 0px 15px;
+    margin-top: 62px;
+}
+
+#box {
+    padding: 90px 50px 50px 50px;
+    background-image: url(../w2/w2_img/custom-img-024-copyright.jpg);
+    /*background-size: cover;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+/*text*/
+h1 {
+    font-weight: 800;
+    font-size: 90px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Oxygen", sans-serif;
+}
+
+h1,
+p {
+    color: var(--white);
+}
+
+/*button*/
+
+.button {
+    padding: 18px 40px;
+    font-weight: 500;
+    size: 16px;
+    border-radius: 8px;
+}
+
+.y_button {
+    background-color: #FFE269;
+    color: var(--text_color);
+    border: 0;
+}
+
+.w_button {
+    color: var(--white);
+    border: 1px var(--white);
+}
+
+@media screen and (max-width: 763px) {
+    #outside_box {
+        padding: 0px 0px;
+    }
+
+    /*text*/
+    h1 {
+        font-size: 38px;
+    }
+}
