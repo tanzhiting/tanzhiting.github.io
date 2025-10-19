@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #510919;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 81vw;
+    margin: auto;
+}
+
+/*flexBox*/
+.flexbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3%;
+}
+
+#box2 {
+    padding-top: 8vh;
+}
+
+#box3 {
+    padding-top: 16vh;
+}
+
+#box4 {
+    padding-top: 24vh;
+}
+
+/*text*/
+
+hr {
+    height: 0.5px;
+    background: rgb(209, 112, 112);
+    border: none;
+}
+
+h3 {
+    color: rgb(209, 112, 112);
+    font-family: "Lora", serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+figcaption {
+    color: rgb(252, 217, 217);
+    font-family: "Prompt", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 21px;
+}
+
+/*img*/
+.img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: auto;
+    filter: grayscale(100%);
+    transition: filter 0.8s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.img:hover {
+    filter: grayscale(0%);
+    transition: filter 0.8s ease-in-out;
+}
+
+#img1 {
+    background-image: url(../w2/w2_img/about_img1.jpg);
+}
+
+#img2 {
+    background-image: url(../w2/w2_img/about_img2.jpg);
+}
+
+#img3 {
+    background-image: url(../w2/w2_img/about_img3.jpg);
+}
+
+#img4 {
+    background-image: url(../w2/w2_img/about_img4.jpg);
+}
+
+/*figure*/
+figure {
+    /*background-color: aqua;*/
+    margin: 20px 0px;
+}
+
+figure img {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1025px) {
+    .flexbox {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3%;
+        column-gap: 5%;
+    }
+
+    #box2 {
+        padding-top: 0;
+    }
+
+    #box3 {
+        padding-top: 0;
+    }
+
+    #box4 {
+        padding-top: 0;
+    }
+
+    .img {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .flexbox {
+        grid-template-columns: 1fr;
+        row-gap: 6px;
+        column-gap: 0%;
+    }
+
+    .img {
+        height: 70vh;
+    }
+}
